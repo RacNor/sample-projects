@@ -5,7 +5,7 @@ import org.bytedeco.javacpp.annotation.*;
 import org.bytedeco.javacpp.tools.*;
 
 @Properties(
-    value = @Platform(include = "NativeLibrary.h"),
+    value = @Platform(include = {"NativeLibrary.h", "test.h"}),
     target = "com.example.myapplication.NativeLibrary"
 )
 public class NativeLibraryConfig implements InfoMapper {
